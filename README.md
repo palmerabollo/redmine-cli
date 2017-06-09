@@ -6,8 +6,24 @@ A simple redmine client
 The project is available at Pypy and you can simply install in the usually way:
 
 ```bash
-pip install red
+pip install pyRedmineClient
 ```
+
+## Usage
+
+```sh
+export REDMINE_ENDPOINT=xxx
+export REDMINE_API_KEY=xxx
+
+red --help
+
+red list --help
+red detail --help
+red close --help
+```
+
+## Development
+
 
 You can install the last version in github in this way:
 
@@ -24,21 +40,7 @@ You'd better upgrade to a newer python interpreter but if you can not, you can o
 pip install 'requests[security]'
 ```
 
-## Usage
-
-```sh
-export REDMINE_ENDPOINT=xxx
-export REDMINE_API_KEY=xxx
-
-./redmine --help
-
-./redmine list --help
-./redmine detail --help
-./redmine close --help
-```
-
 ## TODO
 
-- pip install
-- create issue
-- docs
+- [ ] create issue
+- [ ] docs
